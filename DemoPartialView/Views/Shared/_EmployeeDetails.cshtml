@@ -1,0 +1,39 @@
+﻿@model DemoPartialView.Models.Employee
+<table border="1" width="400">
+     
+    <tr>
+        <td rowspan="7" style="width:200px;height:200px;">
+            <img style="height:100%; width:100%" src="@Url.Content(Model.Photo)" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Id:@Model.Id
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Name:@Model.Name
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Job:@Model.Job
+        </td>
+    </tr>
+    <tr>
+        <td>
+            City:@Model.City
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Status:@Html.CheckBoxFor(S=>S.Status)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Salary:@Model.Salary
+        </td>
+    </tr>
+</table>

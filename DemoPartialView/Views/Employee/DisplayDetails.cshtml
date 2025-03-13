@@ -1,0 +1,22 @@
+﻿@model List<DemoPartialView.Models.Employee>
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DisplayDetails</title>
+</head>
+<body>
+    <div>
+        <h1>Employee Details</h1>
+        @foreach (DemoPartialView.Models.Employee items in Model)
+        {
+            Html.RenderPartial("_EmployeeDetails", items);
+        }
+    </div>
+</body>
+</html>
