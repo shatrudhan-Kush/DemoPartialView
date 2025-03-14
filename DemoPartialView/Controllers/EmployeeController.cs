@@ -16,7 +16,7 @@ namespace DemoPartialView.Controllers
             Employee emp2 = new Employee { Id = 1002, Name = "Arti", Job = "HR", Salary = 60000.00, City = "Delhi", Photo = "/Images/lahga2j.jpg", Status = true };
             Employee emp3= new Employee { Id = 1003, Name = "Pooja", Job = "Developer", Salary = 70000.00, City = "Mumbai", Photo ="Images/lahga4p.png", Status = true };
             Employee emp4 = emp3;
-            List<Employee> list = new List<Employee> { emp1,emp2,emp3, emp4 };
+            List<Employee> list = new List<Employee> { emp1,emp2,emp3};
             return View(list);
         }
     }
